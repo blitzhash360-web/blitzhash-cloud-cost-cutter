@@ -37,7 +37,8 @@ export function renderText(r, { color = true, brief = false, top = 0 } = {}) {
   if (!r.findings.length) {
     L.push(c.green("No cost flags found in these files. Nice."));
   } else {
-    L.push(`${c.bold("Possible savings:")} ${c.green(c.bold(`~${money(r.savings.estimate)}/mo`))} estimated, ${c.bold(`up to ${money(r.savings.upTo)}/mo`)} if you also drop what you don't need`);
+    if (r.savings.upTo > 0) L.push(`${c.bold("Possible savings:")} ${c.green(c.bold(`~${money(r.savings.estimate)}/mo`))} estimated, ${c.bold(`up to ${money(r.savings.upTo)}/mo`)} if you also drop what you don't need`);
+    else L.push(`${c.bold(`${r.findings.length} thing${r.findings.length === 1 ? "" : "s"} to look at.`)} Billing data alone can't put a number on ${r.findings.length === 1 ? "it" : "them"}; see what to check below.`);
     L.push("");
     L.push(c.dim(`${pad("#", 3)}${pad("", 5)}${pad("Finding", 54)}${lpad("Now/mo", 10)}${lpad("Save/mo", 18)}`));
     const shown = top ? r.findings.slice(0, top) : r.findings;

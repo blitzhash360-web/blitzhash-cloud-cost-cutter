@@ -96,7 +96,7 @@ Want a senior team to look at it? Get a [free assessment at blitzhash.com](https
 ## Run the tests
 
 ```bash
-npm test                       # 17 tests: every fixture -> expected flags and savings
+npm test                       # 18 tests: every fixture -> expected flags and savings
 node bin/cost-cutter.js --demo # full report
 ```
 

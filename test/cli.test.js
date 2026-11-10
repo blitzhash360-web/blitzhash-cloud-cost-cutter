@@ -46,3 +46,9 @@ test("bad input exits 2", () => {
   const a = spawnSync(process.execPath, [bin, "--demo", "--assume", "bogus=1"], { encoding: "utf8" });
   assert.equal(a.status, 2);
 });
+
+test("no fake $0 savings headline when nothing can be estimated", () => {
+  const out = run(join(root, "fixtures", "cases", "vercel-cli.json"), "--no-color");
+  assert.match(out, /1 thing to look at\./);
+  assert.doesNotMatch(out, /Possible savings/);
+});
