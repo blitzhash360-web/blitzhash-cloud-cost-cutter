@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Tests (Node ${{ matrix.node }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: ["18", "20", "22", "24"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Unit + CLI tests (fixtures -> expected flags)
+        run: npm test
+      - name: Demo runs and prints the expected flags
+        run: |
+          node bin/cost-cutter.js --demo --no-color | tee demo.txt
+          for flag in SUPABASE_OVERSIZED_COMPUTE SUPABASE_IDLE_PROJECT SUPABASE_SPEND_CAP_OFF VERCEL_FUNCTIONS VERCEL_BANDWIDTH VERCEL_BUILD_MACHINES AWS_IDLE_IPV4 AWS_NAT_GATEWAY AWS_EBS_GP2; do
+            grep -q "$flag" demo.txt || { echo "missing $flag"; exit 1; }
+          done
+      - name: Each sample file works on its own
+        run: |
+          for f in fixtures/demo/* templates/*; do node bin/cost-cutter.js "$f" --brief --no-color > /dev/null || exit 1; done
+
+  docs:
+    name: Docs, links, price pages, secrets
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Markdown lint
+        run: npx -y markdownlint-cli2@0.24.0
+      - name: Links (relative files and anchors)
+        run: node scripts/check-links.mjs
+      - name: Links and price source pages (external)
+        run: node scripts/check-links.mjs --external
+      - name: No secrets or .env files committed
+        run: |
+          ! git ls-files | grep -E '(^|/)\.env($|\.)' | grep -v '\.env\.example$'
+          ! git grep -nE '(AKIA[0-9A-Z]{16}|sk_live_[0-9a-zA-Z]{20,}|ghp_[0-9A-Za-z]{36}|eyJhbGciOiJ[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,}|-----BEGIN [A-Z ]*PRIVATE KEY-----)' -- . ':!.github/workflows/ci.yml'

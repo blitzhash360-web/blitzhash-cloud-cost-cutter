@@ -1,0 +1,29 @@
+{
+  "provider": "supabase",
+  "_how_to_fill": "Copy numbers for the last 30 days from supabase.com/dashboard: Organization > Usage (egress, storage), Organization > Billing (plan, spend cap), and each project's Settings > Compute and Disk (compute size) and Reports > Database (CPU, RAM). Delete fields you don't know; the tool skips checks it can't do. See docs/EXPORTS.md.",
+  "org": "my-org",
+  "plan": "pro",
+  "spend_cap": true,
+  "month": "2026-10",
+  "projects": [
+    {
+      "name": "my-app-prod",
+      "environment": "production",
+      "compute": "micro",
+      "db_size_gb": 1.0,
+      "egress_gb": 20,
+      "cached_egress_gb": 5,
+      "storage_gb": 2,
+      "requests_30d": 250000,
+      "days_since_last_request": 0,
+      "avg_cpu_pct": 30,
+      "peak_cpu_pct": 65,
+      "avg_ram_pct": 55,
+      "peak_connections": 20,
+      "pitr_days": 0,
+      "branch_hours": 0,
+      "log_drains": 0,
+      "custom_domain": false
+    }
+  ]
+}

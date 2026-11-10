@@ -1,0 +1,4 @@
+identity/LineItemId,bill/BillingPeriodStartDate,lineItem/UsageStartDate,lineItem/UsageEndDate,lineItem/ProductCode,lineItem/UsageType,lineItem/LineItemDescription,lineItem/UsageAmount,lineItem/UnblendedCost,lineItem/ResourceId,product/ProductName,pricing/unit
+a1,2026-10-01T00:00:00Z,2026-10-01T00:00:00Z,2026-11-01T00:00:00Z,AmazonVPC,USE1-PublicIPv4:IdleAddress,"$0.005 per Idle public IPv4 address per hour",744,3.72,eipalloc-0case0001,Amazon Virtual Private Cloud,Hrs
+a2,2026-10-01T00:00:00Z,2026-10-01T00:00:00Z,2026-11-01T00:00:00Z,AmazonEC2,USE1-EBS:VolumeUsage.gp2,"$0.10 per GB-month of General Purpose SSD (gp2) provisioned storage",500,50.00,vol-0case0001,Amazon Elastic Compute Cloud,GB-Mo
+a3,2026-10-01T00:00:00Z,2026-10-01T00:00:00Z,2026-11-01T00:00:00Z,AmazonEC2,USE1-EBS:VolumeUsage.gp3,"$0.08 per GB-month of General Purpose SSD (gp3) provisioned storage",100,8.00,vol-0case0002,Amazon Elastic Compute Cloud,GB-Mo

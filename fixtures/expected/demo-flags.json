@@ -1,0 +1,230 @@
+{
+  "_note": "Expected output of the demo fixtures. Regenerate only after checking each change by hand.",
+  "findings": [
+    {
+      "id": "SUPABASE_OVERSIZED_COMPUTE",
+      "title": "Oversized database: app-prod on LARGE",
+      "monthlyCost": 110,
+      "saving": {
+        "amount": 50,
+        "kind": "estimate"
+      }
+    },
+    {
+      "id": "AWS_NAT_GATEWAY",
+      "title": "NAT gateway running with almost no traffic",
+      "monthlyCost": 33.48,
+      "saving": {
+        "amount": 33.48,
+        "kind": "up_to"
+      }
+    },
+    {
+      "id": "VERCEL_FUNCTIONS",
+      "title": "Server functions are your biggest Vercel cost",
+      "monthlyCost": 83.58,
+      "saving": {
+        "amount": 25.07,
+        "kind": "estimate"
+      }
+    },
+    {
+      "id": "SUPABASE_IDLE_PROJECT",
+      "title": "Idle project: old-landing-v1",
+      "monthlyCost": 10,
+      "saving": {
+        "amount": 10,
+        "kind": "estimate"
+      }
+    },
+    {
+      "id": "VERCEL_BANDWIDTH",
+      "title": "Paying for bandwidth over the included amount",
+      "monthlyCost": 123,
+      "saving": {
+        "amount": 0,
+        "kind": "none"
+      }
+    },
+    {
+      "id": "SUPABASE_SPEND_CAP_OFF",
+      "title": "Spend cap is off",
+      "monthlyCost": 0,
+      "saving": {
+        "amount": 0,
+        "kind": "none"
+      }
+    },
+    {
+      "id": "VERCEL_EXTRA_SEATS",
+      "title": "3 paid developer seats",
+      "monthlyCost": 60,
+      "saving": {
+        "amount": 40,
+        "kind": "up_to"
+      }
+    },
+    {
+      "id": "SUPABASE_DEV_ON_PAID",
+      "title": "Non-production project on a paid org: app-staging",
+      "monthlyCost": 15,
+      "saving": {
+        "amount": 15,
+        "kind": "up_to"
+      }
+    },
+    {
+      "id": "VERCEL_BUILD_MACHINES",
+      "title": "Builds run on Enhanced/Turbo machines",
+      "monthlyCost": 29.4,
+      "saving": {
+        "amount": 14.7,
+        "kind": "estimate"
+      }
+    },
+    {
+      "id": "AWS_LAMBDA_PROVISIONED",
+      "title": "Lambda provisioned concurrency left on",
+      "monthlyCost": 10.8,
+      "saving": {
+        "amount": 10.8,
+        "kind": "up_to"
+      }
+    },
+    {
+      "id": "AWS_IDLE_IPV4",
+      "title": "Idle public IP addresses",
+      "monthlyCost": 7.44,
+      "saving": {
+        "amount": 7.44,
+        "kind": "estimate"
+      }
+    },
+    {
+      "id": "SUPABASE_EGRESS",
+      "title": "Egress overage on app-prod",
+      "monthlyCost": 14.4,
+      "saving": {
+        "amount": 4.8,
+        "kind": "estimate"
+      }
+    },
+    {
+      "id": "AWS_EBS_GP2",
+      "title": "Disks on older gp2 volumes",
+      "monthlyCost": 20,
+      "saving": {
+        "amount": 4,
+        "kind": "estimate"
+      }
+    },
+    {
+      "id": "AWS_DATA_TRANSFER_OUT",
+      "title": "Data transfer out to the internet",
+      "monthlyCost": 14.4,
+      "saving": {
+        "amount": 0,
+        "kind": "none"
+      }
+    },
+    {
+      "id": "SUPABASE_PITR",
+      "title": "Point-in-time recovery on app-prod",
+      "monthlyCost": 100,
+      "saving": {
+        "amount": 100,
+        "kind": "up_to"
+      }
+    },
+    {
+      "id": "VERCEL_ADDON",
+      "title": "Paid add-on: Observability Plus",
+      "monthlyCost": 12,
+      "saving": {
+        "amount": 12,
+        "kind": "up_to"
+      }
+    },
+    {
+      "id": "SUPABASE_BRANCHES",
+      "title": "Preview branches left running on app-prod",
+      "monthlyCost": 19.35,
+      "saving": {
+        "amount": 9.68,
+        "kind": "estimate"
+      }
+    },
+    {
+      "id": "VERCEL_DEPLOY_STORAGE",
+      "title": "Paying to keep old deployments",
+      "monthlyCost": 4.2,
+      "saving": {
+        "amount": 4.2,
+        "kind": "up_to"
+      }
+    },
+    {
+      "id": "VERCEL_IMAGES",
+      "title": "Image optimization charges",
+      "monthlyCost": 9,
+      "saving": {
+        "amount": 0,
+        "kind": "none"
+      }
+    },
+    {
+      "id": "VERCEL_ISR_WRITES",
+      "title": "Pages are re-generated more often than they are read",
+      "monthlyCost": 8.4,
+      "saving": {
+        "amount": 0,
+        "kind": "none"
+      }
+    },
+    {
+      "id": "AWS_SNAPSHOTS",
+      "title": "Old disk snapshots piling up",
+      "monthlyCost": 15,
+      "saving": {
+        "amount": 0,
+        "kind": "none"
+      }
+    },
+    {
+      "id": "AWS_OLD_INSTANCE_TYPES",
+      "title": "Previous-generation server types",
+      "monthlyCost": 34.52,
+      "saving": {
+        "amount": 0,
+        "kind": "none"
+      }
+    },
+    {
+      "id": "AWS_CLOUDWATCH_LOGS",
+      "title": "Paying to collect lots of logs",
+      "monthlyCost": 11,
+      "saving": {
+        "amount": 0,
+        "kind": "none"
+      }
+    },
+    {
+      "id": "AWS_ALWAYS_ON_ONDEMAND",
+      "title": "Servers running all month at on-demand prices",
+      "monthlyCost": 34.52,
+      "saving": {
+        "amount": 0,
+        "kind": "none"
+      }
+    }
+  ],
+  "savings": {
+    "estimate": 125.69,
+    "upTo": 341.17
+  },
+  "spend": {
+    "vercel": 331.98,
+    "aws": 151.65,
+    "supabase": 283.75
+  }
+}

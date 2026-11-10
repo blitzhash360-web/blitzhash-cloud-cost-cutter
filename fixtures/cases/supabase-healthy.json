@@ -1,0 +1,9 @@
+{
+  "provider": "supabase",
+  "org": "healthy",
+  "plan": "pro",
+  "spend_cap": true,
+  "projects": [
+    { "name": "prod", "environment": "production", "compute": "micro", "db_size_gb": 1.1, "egress_gb": 40, "requests_30d": 900000, "avg_cpu_pct": 38, "peak_cpu_pct": 70, "avg_ram_pct": 61 }
+  ]
+}

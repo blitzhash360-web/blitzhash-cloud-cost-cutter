@@ -1,0 +1,4 @@
+provider,service,metric,quantity,unit,cost,resource_id,resource_name,period_start,period_end,notes
+vercel,Build Minutes (Turbo),build_minutes_turbo,400,minutes,42.00,,my-app,2026-10-01,2026-11-01,copied from Vercel Usage page
+vercel,Fast Data Transfer,fast_data_transfer,1200,GB,30.00,,my-app,2026-10-01,2026-11-01,
+aws,Amazon Virtual Private Cloud,PublicIPv4:IdleAddress,744,Hrs,3.72,eipalloc-example,,2026-10-01,2026-11-01,

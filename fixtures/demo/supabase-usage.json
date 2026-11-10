@@ -1,0 +1,48 @@
+{
+  "provider": "supabase",
+  "_how_to_fill": "Copy these numbers from supabase.com/dashboard > Organization > Usage and each project's Reports > Database (last 30 days). See docs/EXPORTS.md.",
+  "org": "demo-saas",
+  "plan": "pro",
+  "spend_cap": false,
+  "month": "2026-10",
+  "projects": [
+    {
+      "name": "app-prod",
+      "environment": "production",
+      "compute": "large",
+      "db_size_gb": 6.2,
+      "egress_gb": 410,
+      "cached_egress_gb": 40,
+      "storage_gb": 22,
+      "requests_30d": 4200000,
+      "avg_cpu_pct": 9,
+      "peak_cpu_pct": 31,
+      "avg_ram_pct": 34,
+      "peak_connections": 48,
+      "pitr_days": 7,
+      "branch_hours": 1440,
+      "log_drains": 0,
+      "custom_domain": false
+    },
+    {
+      "name": "app-staging",
+      "environment": "staging",
+      "compute": "small",
+      "db_size_gb": 0.4,
+      "egress_gb": 3,
+      "requests_30d": 12000,
+      "avg_cpu_pct": 3,
+      "peak_cpu_pct": 12,
+      "avg_ram_pct": 41
+    },
+    {
+      "name": "old-landing-v1",
+      "environment": "production",
+      "compute": "micro",
+      "db_size_gb": 0.1,
+      "egress_gb": 0,
+      "requests_30d": 0,
+      "days_since_last_request": 63
+    }
+  ]
+}

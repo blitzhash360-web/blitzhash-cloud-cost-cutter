@@ -1,0 +1,133 @@
+{
+  "checked": "2026-11-10",
+  "currency": "USD",
+  "note": "List prices copied by hand from the public pricing pages below on the 'checked' date. Prices change. Taxes excluded. AWS prices are US East examples and vary by region.",
+  "vercel": {
+    "source": "https://vercel.com/pricing",
+    "pro_plan_month": 20,
+    "pro_included_credit_month": 20,
+    "developer_seat_month": 20,
+    "viewer_seat_month": 0,
+    "fast_data_transfer_included_gb": 1000,
+    "fast_data_transfer_per_gb": 0.15,
+    "build_minute": {
+      "basic": 0.007,
+      "standard": 0.014,
+      "enhanced": 0.028,
+      "turbo": 0.105
+    },
+    "fluid_active_cpu_per_hour": 0.128,
+    "fluid_provisioned_memory_per_gb_hour": 0.0106,
+    "function_invocations_per_million": 0.6,
+    "image_transformations_per_1k": 0.05,
+    "isr_reads_per_million": 0.4,
+    "isr_writes_per_million": 4,
+    "deployment_storage_per_gb_month": 0.1,
+    "observability_plus_events_per_million": 1.2,
+    "speed_insights_plus_per_project_month": 10,
+    "web_analytics_plus_month": 10,
+    "password_protection_per_project_month": 20,
+    "static_ips_per_project_month": 100,
+    "saml_sso_month": 300,
+    "default_on_demand_budget": 200
+  },
+  "supabase": {
+    "source": "https://supabase.com/pricing",
+    "pro_plan_month": 25,
+    "team_plan_month": 599,
+    "compute_credit_month": 10,
+    "compute_month": {
+      "micro": 10,
+      "small": 15,
+      "medium": 60,
+      "large": 110,
+      "xl": 210,
+      "2xl": 410,
+      "4xl": 960,
+      "8xl": 1870,
+      "12xl": 2800,
+      "16xl": 3730
+    },
+    "compute_ram_gb": {
+      "micro": 1,
+      "small": 2,
+      "medium": 4,
+      "large": 8,
+      "xl": 16,
+      "2xl": 32,
+      "4xl": 64,
+      "8xl": 128,
+      "12xl": 192,
+      "16xl": 256
+    },
+    "compute_order": [
+      "micro",
+      "small",
+      "medium",
+      "large",
+      "xl",
+      "2xl",
+      "4xl",
+      "8xl",
+      "12xl",
+      "16xl"
+    ],
+    "egress_included_gb": 250,
+    "egress_per_gb": 0.09,
+    "cached_egress_included_gb": 250,
+    "cached_egress_per_gb": 0.03,
+    "disk_included_gb": 8,
+    "disk_per_gb": 0.125,
+    "pitr_per_7_days_month": 100,
+    "branch_per_hour": 0.01344,
+    "log_drain_month": 60,
+    "custom_domain_month": 10
+  },
+  "aws": {
+    "sources": {
+      "public_ipv4_and_nat": "https://aws.amazon.com/vpc/pricing/",
+      "ebs": "https://aws.amazon.com/ebs/pricing/",
+      "lambda": "https://aws.amazon.com/lambda/pricing/"
+    },
+    "public_ipv4_per_hour": 0.005,
+    "nat_gateway_per_hour": 0.045,
+    "nat_gateway_per_gb": 0.045,
+    "ebs_gp2_per_gb_month": 0.1,
+    "ebs_gp3_per_gb_month": 0.08,
+    "data_transfer_out_per_gb": 0.09
+  },
+  "selfhost": {
+    "source": "https://www.digitalocean.com/pricing/droplets",
+    "label": "DigitalOcean Basic Droplet (one public example of a plain VPS; any similar VPS works)",
+    "droplets": [
+      {
+        "ram_gb": 2,
+        "vcpu": 1,
+        "month": 12
+      },
+      {
+        "ram_gb": 2,
+        "vcpu": 2,
+        "month": 18
+      },
+      {
+        "ram_gb": 4,
+        "vcpu": 2,
+        "month": 24
+      },
+      {
+        "ram_gb": 8,
+        "vcpu": 4,
+        "month": 48
+      },
+      {
+        "ram_gb": 16,
+        "vcpu": 8,
+        "month": 96
+      }
+    ],
+    "weekly_backup_share": 0.2,
+    "supabase_requirements_source": "https://supabase.com/docs/guides/self-hosting/docker",
+    "supabase_recommended_ram_gb": 8
+  }
+}

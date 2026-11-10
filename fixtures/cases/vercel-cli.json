@@ -1,0 +1,10 @@
+{
+  "period": { "start": "2026-10-01T07:00:00.000Z", "end": "2026-11-01T07:00:00.000Z" },
+  "context": "case-team",
+  "costUnit": "USD",
+  "services": [
+    { "name": "Fast Data Transfer", "usage": 2500, "unit": "GB", "cost": 225.0 },
+    { "name": "Function Invocations", "usage": 2000000, "unit": "invocations", "cost": 1.2 }
+  ],
+  "totals": { "cost": 226.2 }
+}

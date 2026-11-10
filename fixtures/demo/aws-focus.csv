@@ -1,0 +1,13 @@
+BilledCost,EffectiveCost,BillingCurrency,ChargeCategory,ChargeDescription,ChargePeriodStart,ChargePeriodEnd,ConsumedQuantity,ConsumedUnit,ResourceId,ServiceName,ServiceProviderName,RegionId,SkuId,SkuMeter
+34.52,34.52,USD,Usage,$0.0464 per On Demand Linux t2.medium Instance Hour,2026-10-01T00:00:00Z,2026-11-01T00:00:00Z,744,Hrs,i-0a1b2c3d4e5f60001,Amazon Elastic Compute Cloud,AWS,us-east-1,DEMO1,BoxUsage:t2.medium
+20.00,20.00,USD,Usage,$0.10 per GB-month of General Purpose SSD (gp2) provisioned storage,2026-10-01T00:00:00Z,2026-11-01T00:00:00Z,200,GB-Mo,vol-0demo0001,Amazon Elastic Compute Cloud,AWS,us-east-1,DEMO2,EBS:VolumeUsage.gp2
+15.00,15.00,USD,Usage,$0.05 per GB-Month of snapshot data stored,2026-10-01T00:00:00Z,2026-11-01T00:00:00Z,300,GB-Mo,snap-0demo0001,Amazon Elastic Compute Cloud,AWS,us-east-1,DEMO3,EBS:SnapshotUsage
+3.72,3.72,USD,Usage,$0.005 per Idle public IPv4 address per hour,2026-10-01T00:00:00Z,2026-11-01T00:00:00Z,744,Hrs,eipalloc-0demo0001,Amazon Virtual Private Cloud,AWS,us-east-1,DEMO4,PublicIPv4:IdleAddress
+3.72,3.72,USD,Usage,$0.005 per Idle public IPv4 address per hour,2026-10-01T00:00:00Z,2026-11-01T00:00:00Z,744,Hrs,eipalloc-0demo0002,Amazon Virtual Private Cloud,AWS,us-east-1,DEMO4,PublicIPv4:IdleAddress
+3.72,3.72,USD,Usage,$0.005 per In-use public IPv4 address per hour,2026-10-01T00:00:00Z,2026-11-01T00:00:00Z,744,Hrs,i-0a1b2c3d4e5f60001,Amazon Virtual Private Cloud,AWS,us-east-1,DEMO5,PublicIPv4:InUseAddress
+33.48,33.48,USD,Usage,$0.045 per NAT Gateway Hour,2026-10-01T00:00:00Z,2026-11-01T00:00:00Z,744,Hrs,nat-0demo0001,Amazon Elastic Compute Cloud,AWS,us-east-1,DEMO6,NatGateway-Hours
+0.14,0.14,USD,Usage,$0.045 per GB Data Processed by NAT Gateways,2026-10-01T00:00:00Z,2026-11-01T00:00:00Z,3.2,GB,nat-0demo0001,Amazon Elastic Compute Cloud,AWS,us-east-1,DEMO7,NatGateway-Bytes
+14.40,14.40,USD,Usage,$0.09 per GB - first 10 TB / month data transfer out beyond the global free tier,2026-10-01T00:00:00Z,2026-11-01T00:00:00Z,260,GB,,Amazon Elastic Compute Cloud,AWS,us-east-1,DEMO8,DataTransfer-Out-Bytes
+10.80,10.80,USD,Usage,Provisioned Concurrency charges for AWS Lambda,2026-10-01T00:00:00Z,2026-11-01T00:00:00Z,2592000,Lambda-GB-Second,arn:aws:lambda:us-east-1:000000000000:function:api,AWS Lambda,AWS,us-east-1,DEMO9,Lambda-Provisioned-Concurrency
+11.00,11.00,USD,Usage,$0.50 per GB custom log data ingested,2026-10-01T00:00:00Z,2026-11-01T00:00:00Z,22,GB,,AmazonCloudWatch,AWS,us-east-1,DEMO10,DataProcessing-Bytes
+1.15,1.15,USD,Usage,$0.023 per GB - first 50 TB / month of storage used,2026-10-01T00:00:00Z,2026-11-01T00:00:00Z,50,GB-Mo,demo-uploads,Amazon Simple Storage Service,AWS,us-east-1,DEMO11,TimedStorage-ByteHrs

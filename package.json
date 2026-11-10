@@ -1,0 +1,22 @@
+{
+  "name": "blitzhash-cloud-cost-cutter",
+  "version": "1.0.0",
+  "description": "Find waste in your Vercel, Supabase and AWS bills from export files: oversized plans, idle resources, wasteful functions and bandwidth, plus a self-hosting estimate. Plain English, no keys.",
+  "type": "module",
+  "bin": {
+    "blitzhash-cloud-cost-cutter": "bin/cost-cutter.js",
+    "cost-cutter": "bin/cost-cutter.js"
+  },
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "demo": "node bin/cost-cutter.js --demo",
+    "test": "node --test test/*.test.js"
+  },
+  "files": ["bin", "src", "fixtures/demo", "templates", "LICENSE", "README.md"],
+  "keywords": ["finops", "cloud-cost", "vercel", "supabase", "aws", "focus", "cost-optimization", "vibe-coding", "cli"],
+  "author": "BlitzHash",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/blitzhash360-web/blitzhash-cloud-cost-cutter.git" },
+  "homepage": "https://blitzhash.com",
+  "bugs": { "url": "https://github.com/blitzhash360-web/blitzhash-cloud-cost-cutter/issues" }
+}
